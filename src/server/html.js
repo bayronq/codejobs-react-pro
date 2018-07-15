@@ -22,6 +22,7 @@ export default function html(options) {
           window.initialState = ${JSON.stringify(initialState)};
         </script>
 
+        <script src="/app/vendor.bundle.js"></script>
         <script src="/app/${app}.bundle.js"></script>
       </body>
     </html>

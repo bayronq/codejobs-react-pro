@@ -2,7 +2,7 @@
   "name": "codejobs-react-pro",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run clean && run build-client && npm build-server",
+    "build": "npm run clean && npm run build-client && npm run build-server",
     "build-client": "NODE_ENV=production BABEL_ENV=production node -r babel-register node_modules/.bin/webpack --progress --display-modules --config webpack/webpack.config.client.js",
     "build-server": "NODE_ENV=production BABEL_ENV=production node -r babel-register node_modules/.bin/webpack --progress --config webpack/webpack.config.server.js",
     "clean": "rimraf dist/ && rimraf public/app",
@@ -22,6 +22,13 @@
     "type": "git",
     "url": "git+https://github.com/jesuskata/codejobs-react-pro.git"
   },
+  "engines": {
+    "node": "current"
+  },
+  "browserlist": [
+    "> 1%",
+    "last 2 versions"
+  ],
   "author": "jesuskata",
   "license": "MIT",
   "dependencies": {
